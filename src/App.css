@@ -1,38 +1,96 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: url('./imagem.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.texto {
   text-align: center;
+  margin: 0 20%;
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-asteroids {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+}
+
+.titulo-asteroids {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container-asteroids-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.data-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.data-date {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartao-asteroid {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.titulo-asteroid {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.descricao-asteroid {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.loading, .error {
+  font-size: 1.2rem;
+  color: #e74c3c;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.loading {
+  color: #3498db;
+}
+
+.sem-asteroids {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 20px;
 }
